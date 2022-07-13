@@ -1,0 +1,17 @@
+
+<!-- <button disabled = {{ isDisabled }}></button> -->
+<h1>Programing books</h1>
+<br>
+<ol>
+    <li>{{ bookName }} by {{ bookAuthor }}
+    <br><br>
+    <img src="{{ bookSrc }}" alt=" {{bookName }}" width="100">
+    </li>
+    <br> <br>
+    <li>{{ bookName2 }} by {{ bookAuthor2 }}
+        <br><br>
+        <img [src]="bookSrc2" alt=" {{bookName2 }}" width="100">
+        </li>
+</ol>
+
+<button (click)="handleClick()" [disabled] = " isDisabled ">Click</button>
