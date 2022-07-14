@@ -14,4 +14,9 @@
         </li>
 </ol>
 
-<button (click)="handleClick()" [disabled] = " isDisabled ">Click</button>
+<br><br>
+
+<button (click)="handleClick()" (mouseover)="handleClick()" [disabled] = " isDisabled ">Click</button>
+<input type="text"  placeholder="Fill in your name please" [(ngModel)] = "showName" />
+
+<p>{{ showName }}</p>
